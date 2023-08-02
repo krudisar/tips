@@ -1,0 +1,8 @@
+# Curl does not cache any requests on the client side; therefore, any caching when using Curl occurs on the server side. 
+# To bypass the server-side cache, you can use the Cache-Control HTTP header to control the caching behavior.
+
+curl https://<FQDN-or-IP> \
+	-H "Cache-Control: no-cache, no-store, must-revalidate" \
+  -H "Pragma: no-cache" \
+  -H "Expires: 0" 
+
