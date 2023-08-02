@@ -1,3 +1,8 @@
+#
+# curl - reference with examples
+https://reqbin.com/curl
+
+
 # Curl does not cache any requests on the client side; therefore, any caching when using Curl occurs on the server side. 
 # To bypass the server-side cache, you can use the Cache-Control HTTP header to control the caching behavior.
 
