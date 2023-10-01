@@ -7,7 +7,9 @@ https://reqbin.com/curl
 # To bypass the server-side cache, you can use the Cache-Control HTTP header to control the caching behavior.
 
 curl https://<FQDN-or-IP> \
-	-H "Cache-Control: no-cache, no-store, must-revalidate" \
+  -H "Cache-Control: no-cache, no-store, must-revalidate" \
   -H "Pragma: no-cache" \
   -H "Expires: 0" 
 
+# show request / response headers
+curl -v $URL
