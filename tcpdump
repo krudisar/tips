@@ -1,3 +1,8 @@
 # 
 tcpdump -n port http
 
+# specify subnet (src | dst) 
+tcpdump -i any -s 0 'net 10.50.52.128/25 && tcp port http'
+
+# specify src subnet 
+tcpdump -i any -s 0 'src net 10.50.52.128/25 && tcp port http'
