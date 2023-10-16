@@ -81,4 +81,14 @@ c677451 Initial Commit
 
 # show what has changed between these two commits
 git diff 8a35324..43d14f9
+
+# in case only one commit was done, you can list the changes (against original version -> HEAD)
+
+# get commit_id
+git log --reflog
+
+# show changes in the first commit
+git diff commit_id
+
+
 ```
