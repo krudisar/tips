@@ -13,7 +13,6 @@ git push
 astros-v1 % ls 
 
 # sync the repository from the GitHub using 'git pull'
-
 astros-v1 % git pull
 
 remote: Enumerating objects: 3, done.
@@ -28,9 +27,21 @@ Fast-forward
  newfile.md | 1 -
  1 file changed, 1 deletion(-)
  delete mode 100644 newfile.md      # <-----------
-
 ```
 
+## How to add and commit all changes (but NOT in NEW files)
+```shell
+git commit -am  "<commit message>"
+git push
+```
+
+## How to add and commit all changes done in all files (including NEW files)
+```shell
+git add --all && git commit -m "comment"
+git push
+```
+
+> TIP: !!! How to change a Git commit messages after a push -> https://www.educative.io/answers/how-to-change-a-git-commit-message-after-a-push
 
 ## … or create a new repository on the command line
 ```shell
