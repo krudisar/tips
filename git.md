@@ -56,7 +56,8 @@ echo 'source ~/.git-prompt.sh' >> ~/.bashrc
 ```
 
 ## How to change author's name & email
-```shellgit commit --amend --reset-author
+```shell
+git commit --amend --reset-author
 ```
 
 ## How to add and commit all changes (but NOT in NEW files)
