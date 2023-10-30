@@ -28,6 +28,36 @@ Fast-forward
  1 file changed, 1 deletion(-)
  delete mode 100644 newfile.md      # <-----------
 ```
+## How to add .gitignore file to prevent copying certain files to remote repository
+
+1. Place .gitignore file to the root repository folder
+2. Add files names
+
+```shell
+.DS_Store
+*.txt
+!readme.txt
+```
+
+the **.gitignore** file above will prevent file .DS_Store, any file with .txt extension to be copied to remote repository (GitLab)
+the only exception is file with name readme.txt (the ! at the beginning of the line says 'this is an exception', copy the file
+
+### What if a file already exists in remote repository (GitLab) ?
+
+**.gitignore** won't ignore a file that's already in your repository. You have to first remove the file for your repository. 
+You can remove a file from the repository without deleting the actual file with **git rm --cached**.
+
+
+## How to change Terminal prompt to show git branch (Linux)
+In case of new repo created locally, the current branch shows up (git branch) after first commit
+```shell
+curl -o ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+echo 'source ~/.git-prompt.sh' >> ~/.bashrc
+```
+
+## How to change author's name & email
+```shellgit commit --amend --reset-author
+```
 
 ## How to add and commit all changes (but NOT in NEW files)
 ```shell
