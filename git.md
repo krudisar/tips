@@ -47,6 +47,11 @@ the only exception is file with name readme.txt (the ! at the beginning of the l
 **.gitignore** won't ignore a file that's already in your repository. You have to first remove the file for your repository. 
 You can remove a file from the repository without deleting the actual file with **git rm --cached**.
 
+```shell
+git rm --cached filename
+git rm --cached foldername/filename
+```
+
 ## How to list content of the remote repository (= what is in GitLab)
 ```shell
 git ls-tree --full-name --name-only -r -t HEAD
