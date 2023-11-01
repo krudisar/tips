@@ -34,13 +34,18 @@ Fast-forward
 2. Add files names
 
 ```shell
-.DS_Store
-*.txt
-!readme.txt
+.DS_Store      # exclude the file
+*.txt          # exclude any file with txt extension
+!readme.txt      
+/file.txt      # specific file in root folder of the repo
+/dir/file.txt  # specific file in specific directory
+folder/        # exclude the whole folder and it's content 
+file*          # exlude any file with name begining 'file'
+folder*        # exlude any folder/directory with name begining 'file' 
 ```
 
 the **.gitignore** file above will prevent file .DS_Store, any file with .txt extension to be copied to remote repository (GitLab)
-the only exception is file with name readme.txt (the ! at the beginning of the line says 'this is an exception', copy the file
+the only exception is file with name readme.txt (the ! at the beginning of the line says 'this is an exception', copy the file)
 
 ### What if a file already exists in remote repository (GitLab) ?
 
